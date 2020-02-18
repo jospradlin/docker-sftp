@@ -18,21 +18,12 @@ configuration:
   Global:
     Chroot:
       Directory: "%h"
-      StartPath: "carbonite"
-    Directories: ["carbonite"]
+      StartPath: carbonite
+    Directories: 
+      - carbonite
   Users:
-    - Username: "jos1"
-      Password: "jos1" 
-      UID: 10000
-    - Username: "jos2"
-      Password: "jos2"
-      UID: 10001
-    - Username: "jos3"
-      Password: "jos3"
-      UID: 10002
-    - Username: "jos4"
-      Password: "jos4"
-      UID: 10003
+    - Username: jos1
+      Password: jos1
     
 storage:
   volumeMounts: []
