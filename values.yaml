@@ -14,16 +14,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 
-configuration: 
-  Global:
-    Chroot:
-      Directory: "%h"
-      StartPath: carbonite
-    Directories: 
-      - carbonite
-  Users:
-    - Username: jos1
-      Password: jos1
+configuration: null
     
 storage:
   volumeMounts: []
